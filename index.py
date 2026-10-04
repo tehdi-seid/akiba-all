@@ -93,58 +93,110 @@ print(f"{x+y:.2f}")"""
 # =============================================================================
 
 # loops
-num=5
+# num=5
 
-while num > 0:
-    print("meow")
-    num-=1
+# while num > 0:
+#     print("meow")
+#     num-=1
 
 
 # we can also do this by using for loop
 
-for _ in range(3):
-    print("meow")
+# for _ in range(3):
+#     print("meow")
     
-for i in [1,3,5,5,7,4,343,4,343,43,]:
-    print(i)
+# for i in [1,3,5,5,7,4,343,4,343,43,]:
+#     print(i)
     
-print("meow\n"*3)
+# print("meow\n"*3)
 
-def return_posetive():
+# def return_posetive():
     
-    while True:
-        num=int(input("enter sth"))
+#     while True:
+#         num=int(input("enter sth"))
     
-        if num>0:
-            print(num)
-            return num
+#         if num>0:
+#             print(num)
+#             return num
     
-        print("enter a posetive number")
+#         print("enter a posetive number")
 # =============================================================================
 
 # python dictionary
 
-fam = {
-    "tehdi": "seid",
-    "seid": "dad",
-    "fatima": "mom",
-    "muju": "brother",
+# fam = {
+#     "tehdi": "seid",
+#     "seid": "dad",
+#     "fatima": "mom",
+#     "muju": "brother",
     
-}
+# }
 
-for family in fam:
-    print(family, fam[family], sep=", ")
+# for family in fam:
+#     print(family, fam[family], sep=", ")
     
     
-# nested for loop
+# # nested for loop
 
-for _ in range(4):
-    for _ in range(4):
-        print("#", end="")
+# for _ in range(4):
+#     for _ in range(4):
+#         print("#", end="")
         
-    print()
+#     print()
 # =============================================================================
+# exeptions in python 
+
+
+# try:
+#     num=int(input("what is x: "))
+    
+# except ValueError as error:
+#     print(f"x is not an intiger {error}")
+    
+    
+# else:
+    
+#     print(num)
+
+while True:
+    try:
+        num=int(input("what is x: "))
+        
+    except ValueError as error:
+        
+        print(f"x is not an intiger {error}")
+    else:
+        break
+print(f"x is {num}")
+
+        
 # =============================================================================
+
+# python liberaries
+
+# import random 
+
+# print(random.choice([1,2,3,4,5,1,4,4,6,3,6,3]))
+# # it generates a random intiger number between 1 and 6
+# print(random.randint(1,6))
+
+# lists=["quen", "joker", "a", "1", "2"]
+# random.shuffle(lists)
+# print(lists)
+
+
+# =============================================================================
+
+# statistics module is python
+
+# import statistics
+
+# print(statistics.median([1,2,3,4,5,1,4,4,6,3,6,3]))
+
+# print(statistics.mean([12,43,34,63,55,3,56,35,345,34]))
+
+print(f"{12000:,}")
+
 # =============================================================================
 # =============================================================================
 # =============================================================================
