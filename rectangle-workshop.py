@@ -8,5 +8,5 @@ area=length * width
 primeter=(length+width)*2
 
 
-print("the Area:", area ,"m^2")
+print("the Area:", area ,"m²")
 print("the Primeter:",primeter,"m")
