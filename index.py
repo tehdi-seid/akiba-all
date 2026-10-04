@@ -158,16 +158,16 @@ print(f"{x+y:.2f}")"""
     
 #     print(num)
 
-while True:
-    try:
-        num=int(input("what is x: "))
+# while True:
+#     try:
+#         num=int(input("what is x: "))
         
-    except ValueError as error:
+#     except ValueError as error:
         
-        print(f"x is not an intiger {error}")
-    else:
-        break
-print(f"x is {num}")
+#         print(f"x is not an intiger {error}")
+#     else:
+#         break
+# print(f"x is {num}")
 
         
 # =============================================================================
@@ -195,10 +195,37 @@ print(f"x is {num}")
 
 # print(statistics.mean([12,43,34,63,55,3,56,35,345,34]))
 
-print(f"{12000:,}")
+# print(f"{12000:,}")
 
 # =============================================================================
-# =============================================================================
-# =============================================================================
+
+# the sys liberary in python
+# import cowsay  
+
+# import sys
+# print(sys.path)
+
+
+# if len(sys.argv)<2:
+#     sys.exit("to few argument")
+
+
+# for arg in sys.argv[1:]:
+#     print("name:",arg)
+#     print(cowsay.trex(f"hello, {arg}"))
+  
+
 # =============================================================================
 
+# API in python
+
+import requests
+import json
+
+data=requests.get("https://jsonplaceholder.typicode.com/todos/")
+
+print(json.dumps(data.json(), indent=2))
+# for datas in data.json():
+#     print(datas["userId"])
+# =============================================================================
+# =============================================================================
