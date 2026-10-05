@@ -218,14 +218,28 @@ print(f"{x+y:.2f}")"""
 # =============================================================================
 
 # API in python
+# import requests
+# import json
 
-import requests
-import json
+# data=requests.get("https://jsonplaceholder.typicode.com/todos/")
 
-data=requests.get("https://jsonplaceholder.typicode.com/todos/")
+# print(json.dumps(data.json(), indent=2))
+# # for datas in data.json():
+# #     print(datas["userId"])
 
-print(json.dumps(data.json(), indent=2))
-# for datas in data.json():
-#     print(datas["userId"])
+def main():
+    
+    print(square(3))
+
+
+def square(num):
+    return num * num
+
+
+if __name__=="__main__":
+    main()
 # =============================================================================
+
+# UNIT TESTINNG IN PYTHON
+
 # =============================================================================
