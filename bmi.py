@@ -1,8 +1,8 @@
 print("================BMI Health Information=========================")
 
-name = input("Enter enter your name: ")
-weight=float(input("Enter weght(Kg): "))
-height=float(input("Enter height(M): "))
+name = input("Enter enter your Name: ")
+weight=float(input("Enter Weght(Kg): "))
+height=float(input("Enter Height(M): "))
 
 
 print(height**2)
@@ -10,7 +10,7 @@ print(height**2)
 bmi=weight/(height**2)
 
 print("===========================================================")
-print("                       BMI REPORT                          ")
+print("                       BMI REPORTs                          ")
 print("===========================================================")
 
 print("Student name: ",name)
