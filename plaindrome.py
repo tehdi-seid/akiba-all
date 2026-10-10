@@ -1,6 +1,6 @@
 print("===================plaindrome checker=======================\n")
 
-value=input("enter any string: ")
+value=input("enter any word: ")
 # print(value.lower())
 
 

@@ -227,19 +227,57 @@ print(f"{x+y:.2f}")"""
 # # for datas in data.json():
 # #     print(datas["userId"])
 
-def main():
+# def main():
     
-    print(square(3))
+#     print(square(3))
 
 
-def square(num):
-    return num * num
+# def square(num):
+#     return num * num
 
 
-if __name__=="__main__":
-    main()
+# if __name__=="__main__":
+#     main()
 # =============================================================================
 
 # UNIT TESTINNG IN PYTHON
 
+# =============================================================================
+
+# file operations in python
+# name = input("enter your name: ")
+# file = open("name.txt", "w")
+
+# file.write(name)
+# file.close()
+# =============================================================================
+
+# with oopen in file i/o its advantage is to remove saying close all the time
+
+# with open("name.txt", "a") as file:
+    # file.write(f"{name}\n")
+
+
+    
+    
+    
+with open("name.csv", "r") as file:
+    lines = file.readlines()
+    lilst=[]
+
+    for line in sorted(lines, key=lambda line: line["name"]):
+        name, value=line.rstrip().split(",")
+        list.append({
+            "name": name,
+            "value": value
+        })
+        print("name", name, "value", value)
+        
+        # print(line, end="")
+        
+
+    
+# =============================================================================
+# =============================================================================
+# =============================================================================
 # =============================================================================
